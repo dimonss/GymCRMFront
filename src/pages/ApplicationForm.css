@@ -183,19 +183,3 @@
     color: var(--text-secondary);
     font-size: var(--font-size-lg);
 }
-
-@media (max-width: 768px) {
-    .progress-bar {
-        flex-direction: column;
-        gap: var(--spacing-md);
-    }
-
-    .progress-line {
-        width: 2px;
-        height: 50px;
-    }
-
-    .sport-options {
-        grid-template-columns: 1fr;
-    }
-}
