@@ -1,0 +1,183 @@
+.home {
+    min-height: 100vh;
+}
+
+.hero {
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--spacing-lg);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.clubs-section {
+    padding: var(--spacing-2xl) 0;
+}
+
+.filters {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.sport-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+}
+
+.sport-filter {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    backdrop-filter: blur(10px);
+}
+
+.sport-filter:hover {
+    border-color: var(--color-primary);
+    color: var(--text-primary);
+}
+
+.sport-filter.active {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: white;
+}
+
+.clubs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.club-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.club-logo {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.club-name {
+    font-size: var(--font-size-xl);
+    margin: 0;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.club-description {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.club-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.info-icon {
+    font-size: var(--font-size-lg);
+}
+
+.club-sports {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.sport-tag {
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+}
+
+.club-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--glass-border);
+}
+
+.status-badge {
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.status-active {
+    background: var(--color-success);
+    color: white;
+}
+
+.status-inactive {
+    background: var(--text-muted);
+    color: white;
+}
+
+.join-date {
+    color: var(--text-muted);
+    font-size: var(--font-size-xs);
+}
+
+.no-results {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .clubs-grid {
+        grid-template-columns: 1fr;
+    }
+}
