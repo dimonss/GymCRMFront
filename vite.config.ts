@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
     // Base path for production deployment
-    base: process.env.NODE_ENV === 'production' ? '/gym_crm/' : '/',
+    base: mode === 'production' ? '/gym_crm/' : '/',
     plugins: [react()],
     resolve: {
         alias: {
@@ -25,4 +25,4 @@ export default defineConfig({
             },
         },
     },
-})
+}))
