@@ -28,9 +28,12 @@ const LoadingFallback: React.FC = () => (
 );
 
 function App() {
+    // Get base path from environment or use default
+    const basename = import.meta.env.BASE_URL;
+
     return (
         <AuthProvider>
-            <BrowserRouter>
+            <BrowserRouter basename={basename}>
                 <div className="app">
                     <Header />
                     <main>
