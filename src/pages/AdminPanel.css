@@ -159,3 +159,10 @@
         grid-template-columns: 1fr;
     }
 }
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md) 0;
+}
