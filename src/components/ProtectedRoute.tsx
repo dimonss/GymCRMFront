@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+// import { Navigate } from 'react-router-dom';
+// import { useAuth } from '../contexts/AuthContext';
 import type { UserRole } from '@/types';
 
 interface ProtectedRouteProps {
@@ -10,7 +10,7 @@ interface ProtectedRouteProps {
 
 export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
     children,
-    requiredRole
+    // requiredRole
 }) => {
     // MOCK: Bypass authentication checks for development/testing
     // const { isAuthenticated, hasRole } = useAuth();
